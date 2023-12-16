@@ -16,7 +16,11 @@ int main(int argc, char **argv) {
   int sum = getSum(arr, n);
   printf("sum of elements = %d\n", sum);
   printArray(arr, n);
-
+  double mean= getMean(arr, n);
+  if(mean!= -1.0){
+  printf("The mean of Numbers as %f\n",mean);
+  
+  }
   free(arr);
 
   return 0;

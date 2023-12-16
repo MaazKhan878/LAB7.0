@@ -31,7 +31,8 @@ int * generateRandomArray(int size) {
   if(size < 0) {
     return NULL;
   }
-  int randomArr[size];
+  // Make daynamic memory we add the malloc function 
+  int *randomArr = (int *)malloc(size * sizeof(int));
   for(int i=0; i<size; i++) {
     randomArr[i] = rand() % 100;
   }
@@ -45,7 +46,6 @@ int getSum(int *arr, int size) {
   int total = 0;
   for(int i=0; i<size; i++) {
     total += arr[i];
-    arr[i] = 0;
   }
   return total;
 }
@@ -59,9 +59,23 @@ void freeTable(int **table, int n) {
   }
   free(table);
 }
-
+// function to find the mean of numbers
 double getMean(const int *arr, int size) {
-  //TODO: implement
+  // check the array address 
+  if(arr == NULL){
+    printf("Invalide address or no address of array\n");
+    return -1;
+  }
+  // check the size because we cannot find the mean of 1 element
+  if(size == 0){
+    printf("Invalide Size..\n");
+    return -1;
+  }
+  double sum = 0.0;
+  for(int i = 0; i<size; i++){
+    sum += arr[i];
+  }
+  return sum/size;
 }
 
 int getMin(const int *arr, int size) {
