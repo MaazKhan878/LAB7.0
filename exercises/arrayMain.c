@@ -60,7 +60,7 @@ int main(int argc, char **argv) {
     // deallocate dynamic memory of this array
     free(filterArray);
   }
-  int r = 10;
+  int r = 3;
   int c = 5;
   int **table2D = createMultiplicationTable(r, c);
   printf("Table:\n");
@@ -72,7 +72,7 @@ int main(int argc, char **argv) {
       printf("\n");
     }
   }
-  
+
   // deallocate a dynamic memory of this array
   free(arr);
 
