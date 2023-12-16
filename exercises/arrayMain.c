@@ -58,7 +58,17 @@ int main(int argc, char **argv) {
     // deallocate dynamic memory of this array
     free(filterArray);
   }
-  
+  int r = 10;
+  int c = 5;
+  int **table2D = createMultiplicationTable(r, c);
+  if(table2D != NULL){
+    for(int i = 0; i<r; i++){
+      for(int j = 0; j<c; j++){
+        printf("%d ",table2D[i][j]);
+      }
+      printf("\n");
+    }
+  }
   // deallocate a dynamic memory of this array
   free(arr);
 
