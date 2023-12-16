@@ -200,5 +200,12 @@ int **createMultiplicationTable(int n, int m) {
       printf("Invalide memory Allocation for Column index...\n");
     }
   }
- 
+  // Multiplication of row and coloumn
+  for(int i = 0; i<n; i++){
+    for(int j = 0; j<n; j++){
+      table[i][j] = i * j;
+    }
+    printf("\n");
+  }
+
 }
