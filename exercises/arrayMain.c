@@ -58,6 +58,7 @@ int main(int argc, char **argv) {
     // deallocate dynamic memory of this array
     free(filterArray);
   }
+  
   // deallocate a dynamic memory of this array
   free(arr);
 

@@ -207,5 +207,7 @@ int **createMultiplicationTable(int n, int m) {
     }
     printf("\n");
   }
+  // Return the 2D array
+  return table;
 
 }
