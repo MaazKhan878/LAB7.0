@@ -186,26 +186,26 @@ int **createMultiplicationTable(int n, int m) {
     return NULL;
   }
   // make the pointers array which store the address in row/pointer 
-  int **table = (int **)malloc(n * sizeof(int));
+  int **table = (int **)malloc(n * sizeof(int *));
   // check validity
   if(table == NULL){
     printf("Invalide Memory allocation...\n");
     return NULL;
   }
-  for(int i = 0; i<m; i++){
+  for(int i = 0; i<n; i++){
     // allocate memory for column for each row 
     table[i] = (int *)malloc(m * sizeof(int));
     // check validity
     if(table[i] == NULL){
       printf("Invalide memory Allocation for Column index...\n");
     }
+      
   }
   // Multiplication of row and coloumn
   for(int i = 0; i<n; i++){
-    for(int j = 0; j<n; j++){
-      table[i][j] = i * j;
+    for(int j = 0; j<m; j++){
+      table[i][j] = (i + 1) * (j + 1);
     }
-    printf("\n");
   }
   // Return the 2D array
   return table;

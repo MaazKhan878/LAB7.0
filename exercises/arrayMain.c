@@ -4,6 +4,8 @@
 
 #include "array_utils.h"
 
+
+
 int main(int argc, char **argv) {
 
   //seed the random number generator with the current time
@@ -61,6 +63,7 @@ int main(int argc, char **argv) {
   int r = 10;
   int c = 5;
   int **table2D = createMultiplicationTable(r, c);
+  printf("Table:\n");
   if(table2D != NULL){
     for(int i = 0; i<r; i++){
       for(int j = 0; j<c; j++){
@@ -69,6 +72,7 @@ int main(int argc, char **argv) {
       printf("\n");
     }
   }
+  
   // deallocate a dynamic memory of this array
   free(arr);
 
