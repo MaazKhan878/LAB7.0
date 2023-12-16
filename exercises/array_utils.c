@@ -178,7 +178,27 @@ int * filterThreshold(const int *arr, int size, int threshold, int *resultSize) 
   // we will return the whole array/pointer to main
   return filterArray;
 }
-
+// create Multipliction table for 2D array
 int **createMultiplicationTable(int n, int m) {
-  //TODO: implement
+  // check Validity
+  if(n == 0 || m == 0){
+    printf("Invalide inpute...\n");
+    return NULL;
+  }
+  // make the pointers array which store the address in row/pointer 
+  int **table = (int **)malloc(n * sizeof(int));
+  // check validity
+  if(table == NULL){
+    printf("Invalide Memory allocation...\n");
+    return NULL;
+  }
+  for(int i = 0; i<m; i++){
+    // allocate memory for column for each row 
+    table[i] = (int *)malloc(m * sizeof(int));
+    // check validity
+    if(table[i] == NULL){
+      printf("Invalide memory Allocation for Column index...\n");
+    }
+  }
+ 
 }
