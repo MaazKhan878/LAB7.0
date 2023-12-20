@@ -34,36 +34,36 @@ int getSum(int *arr, int size);
 void freeTable(int **table, int n);
 
 /**
- * TODO: add your own documentation
+ * return the mean of the array
  */
 double getMean(const int *arr, int size);
 
 /**
- * TODO: add your own documentation
+ * return the min of the array
  */
 int getMin(const int *arr, int size);
 
 /**
- * TODO: add your own documentation
+ * return the min number index
  */
 int getIndexOfMin(const int *arr, int size);
 
 /**
- * TODO: add your own documentation
+ * return max number from array
  */
 int getMax(const int *arr, int size);
 
 /**
- * TODO: add your own documentation
+ * rturn max number index 
  */
 int getIndexOfMax(const int *arr, int size);
 
 /**
- * TODO: add your own documentation
+ * return the new or dynamic array to main where a new were formed
  */
 int * filterThreshold(const int *arr, int size, int threshold, int *resultSize);
 
 /**
- * TODO: add your own documentation
+ * Formed two dimensional new array for multiplication table and return
  */
 int **createMultiplicationTable(int n, int m);
