@@ -59,7 +59,7 @@ int getMax(const int *arr, int size);
 int getIndexOfMax(const int *arr, int size);
 
 /**
- * return the new or dynamic array to main where a new were formed
+ * return the new or dynamic array to main with new size
  */
 int * filterThreshold(const int *arr, int size, int threshold, int *resultSize);
 

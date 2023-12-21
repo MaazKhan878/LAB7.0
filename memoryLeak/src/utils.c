@@ -1,6 +1,6 @@
 #include <stdlib.h>
 
-#include "../include/utils.h"
+#include "include/utils.h"
 
 int cmpInt(const void *a, const void *b) {
   int x = *((const int *)a);

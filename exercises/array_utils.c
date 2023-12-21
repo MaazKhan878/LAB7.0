@@ -1,6 +1,5 @@
 #include <stdlib.h>
 #include <stdio.h>
-
 #include "array_utils.h"
 
 void printArray(const int *arr, int n) {
@@ -147,14 +146,14 @@ int getIndexOfMax(const int *arr, int size) {
   return maxIndex;
 }
 // the function filter the number from array according the condition 
-// The function as not a normal function because it return the pointer / Address of dynamic array/pointer
+// The function as not a normal function because it return the pointer / Address of dynamic array
 int * filterThreshold(const int *arr, int size, int threshold, int *resultSize) {
   // check validity
   if(arr == NULL || resultSize == NULL){
-    printf("Invalide array....");
+    printf("Invalide array....\n");
     return NULL;
   }
-  // variable count to store the increment value for the size of thresholdResult array/pointer;
+  // variable count to store the increment value for the size of filterArra;
   int count = 0;
   for(int i = 0; i<size; i++){
     // condition which filter size for filterArray array
